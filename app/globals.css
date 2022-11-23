@@ -1,0 +1,107 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+header nav {
+  display: flex;
+  padding: .6rem;
+  background: #2b445e;
+  border-bottom: 2px solid #335679;
+  box-shadow: 2px 0 4px 3px #0b1014;
+  ;
+}
+
+header nav a {
+  padding: .4em .6em;
+  border: 1px dashed transparent;
+  border-spacing: .5em;
+}
+
+header nav a:hover {
+  background-color: #23374d;
+  ;
+}
+
+.active-link {
+  background: #23374d;
+  border-color: aqua;
+  ;
+}
+
+.post-page .title {
+  text-align: center;
+}
+
+.post-container {
+  display: flex;
+
+}
+
+.post-view {
+  margin: 20px;
+  flex: 2;
+  background: #2B445E;
+}
+
+
+.view-container {
+  position: sticky;
+  top: 150px;
+  padding: 20px;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+}
+
+.tags span {
+  background-color: #101E2C;
+  padding: 4px;
+  border: 1px dashed aqua;
+  text-transform: capitalize;
+}
+
+.posts {
+  padding: 20px;
+  flex: 1
+}
+
+.posts div {
+  margin: 4px;
+  background-color: #2B445E;
+  padding: 10px;
+}
+
+.posts div h3 {
+  color: #9ec8f3;
+}
+
+.posts div h3:hover {
+  color: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    color: rgb(216, 216, 216);
+    background: #101E2C;
+  }
+}
